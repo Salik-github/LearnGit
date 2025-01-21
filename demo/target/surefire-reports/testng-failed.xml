@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="4" parallel="methods" name="Failed suite [MyTestSuite]" guice-stage="DEVELOPMENT" verbose="0">
+  <test thread-count="4" parallel="methods" name="Test1(failed)" verbose="0">
+    <classes>
+      <class name="com.automationtesingwebsite.testsuite.homeTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="testCase1"/>
+          <include name="testCase2"/>
+        </methods>
+      </class> <!-- com.automationtesingwebsite.testsuite.homeTest -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [MyTestSuite] -->
