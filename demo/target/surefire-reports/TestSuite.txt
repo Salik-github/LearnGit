@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: TestSuite
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.365 s <<< FAILURE! - in TestSuite
+testCase1(com.automationtesingwebsite.testsuite.homeTest)  Time elapsed: 0.051 s  <<< FAILURE!
+java.lang.AssertionError: expected [true] but found [false]
+	at com.automationtesingwebsite.testsuite.homeTest.testCase1(homeTest.java:20)
+
