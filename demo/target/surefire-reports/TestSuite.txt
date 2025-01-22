@@ -1,8 +1,17 @@
 -------------------------------------------------------------------------------
 Test set: TestSuite
 -------------------------------------------------------------------------------
-Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.365 s <<< FAILURE! - in TestSuite
-testCase1(com.automationtesingwebsite.testsuite.homeTest)  Time elapsed: 0.051 s  <<< FAILURE!
-java.lang.AssertionError: expected [true] but found [false]
-	at com.automationtesingwebsite.testsuite.homeTest.testCase1(homeTest.java:20)
+Tests run: 4, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 8.806 s <<< FAILURE! - in TestSuite
+testCase4(com.automationtesingwebsite.testsuite.homeTest)  Time elapsed: 1.298 s  <<< FAILURE!
+org.openqa.selenium.NoSuchElementException: 
+no such element: Unable to locate element: {"method":"css selector","selector":".product-price .woocommerce-Price-amount amount"}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: '4.27.0', revision: 'd6e718d134'
+System info: os.name: 'Linux', os.arch: 'amd64', os.version: '5.15.0-130-generic', java.version: '17.0.13'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c196eb0e50f8172c797adc395bef31aa, findElement {value=.product-price .woocommerce-Price-amount amount, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44433/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c196eb0e50f8172c797adc395bef31aa
+	at com.automationtesingwebsite.testsuite.homeTest.testCase4(homeTest.java:34)
 

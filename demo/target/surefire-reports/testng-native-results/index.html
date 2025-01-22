@@ -92,7 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                    <span class="method-stats">4 methods, 1 failed,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title failed">Failed methods</span>
@@ -103,7 +103,7 @@
                     <div class="method-list-content failed suite-Surefire_suite">
                       <span>
                         <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-Surefire_suite" title="com.automationtesingwebsite.testsuite.homeTest" class="method navigator-link" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.automationtesingwebsite.testsuite.homeTest" class="method navigator-link" hash-for-method="testCase4">testCase4</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content failed suite-Surefire_suite -->
@@ -117,7 +117,17 @@
                     <div class="method-list-content passed suite-Surefire_suite">
                       <span>
                         <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.automationtesingwebsite.testsuite.homeTest" class="method navigator-link" hash-for-method="testCase1">testCase1</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-Surefire_suite" title="com.automationtesingwebsite.testsuite.homeTest" class="method navigator-link" hash-for-method="testCase2">testCase2</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="passed.png" width="3%"/>
+                        <a href="#" panel-name="suite-Surefire_suite" title="com.automationtesingwebsite.testsuite.homeTest" class="method navigator-link" hash-for-method="testCase3">testCase3</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Surefire_suite -->
@@ -140,16 +150,34 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="testCase1">
-                  </a> <!-- testCase1 -->
-                  <span class="method-name">testCase1</span>
-                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
-	at com.automationtesingwebsite.testsuite.homeTest.testCase1(homeTest.java:20)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
-... Removed 34 stack frames
+                  <a name="testCase4">
+                  </a> <!-- testCase4 -->
+                  <span class="method-name">testCase4</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;css selector&quot;,&quot;selector&quot;:&quot;.product-price .woocommerce-Price-amount amount&quot;}
+  (Session info: chrome=127.0.6533.72)
+For documentation on this error, please visit: https://www.selenium.dev/documentation/webdriver/troubleshooting/errors#no-such-element-exception
+Build info: version: &apos;4.27.0&apos;, revision: &apos;d6e718d134&apos;
+System info: os.name: &apos;Linux&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;5.15.0-130-generic&apos;, java.version: &apos;17.0.13&apos;
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [c196eb0e50f8172c797adc395bef31aa, findElement {value=.product-price .woocommerce-Price-amount amount, using=css selector}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 127.0.6533.72, chrome: {chromedriverVersion: 127.0.6533.119 (bdef6783a05..., userDataDir: /tmp/.org.chromium.Chromium...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:44433}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: linux, proxy: Proxy(), se:cdp: ws://localhost:44433/devtoo..., se:cdpVersion: 127.0.6533.72, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: c196eb0e50f8172c797adc395bef31aa
+	at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:190)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:165)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:59)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:362)
+	at com.automationtesingwebsite.pagefactory.basketPage.verifytotalPrice(basketPage.java:17)
+	at com.automationtesingwebsite.testsuite.homeTest.testCase4(homeTest.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+... Removed 37 stack frames
 </div> <!-- stack-trace -->
-                  <em>
-(verify home have 3 sliders)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -162,11 +190,29 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
+                  <a name="testCase1">
+                  </a> <!-- testCase1 -->
+                  <span class="method-name">testCase1</span>
+                  <em>
+(verify home have 3 sliders)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
                   <a name="testCase2">
                   </a> <!-- testCase2 -->
                   <span class="method-name">testCase2</span>
                   <em>
 (verify home page have 3 arrival image)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase3">
+                  </a> <!-- testCase3 -->
+                  <span class="method-name">testCase3</span>
+                  <em>
+(arrival image clickable and Verify added basket)                  </em>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,20 +269,28 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(2);
+data.addRows(4);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testCase1')
+data.setCell(0, 1, 'testCase3')
 data.setCell(0, 2, 'com.automationtesingwebsite.testsuite.homeTest')
-data.setCell(0, 3, 38);
+data.setCell(0, 3, 2937);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'testCase2')
+data.setCell(1, 1, 'testCase4')
 data.setCell(1, 2, 'com.automationtesingwebsite.testsuite.homeTest')
-data.setCell(1, 3, 22);
+data.setCell(1, 3, 1287);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCase1')
+data.setCell(2, 2, 'com.automationtesingwebsite.testsuite.homeTest')
+data.setCell(2, 3, 43);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCase2')
+data.setCell(3, 2, 'com.automationtesingwebsite.testsuite.homeTest')
+data.setCell(3, 3, 18);
 window.suiteTableData['Surefire_suite']= { tableData: data, tableDiv: 'times-div-Surefire_suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 60 ms</span>
+              <span class="suite-total-time">Total running time: 4 seconds</span>
               <div id="times-div-Surefire_suite">
               </div> <!-- times-div-Surefire_suite -->
             </div> <!-- times-div -->
@@ -264,18 +318,26 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.automationtesingwebsite.testsuite.homeTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
-                <span class="method-name">setUp</span>
+                <span class="method-name">setup</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
-                <img src="failed.png">
-                </img>
                 <span class="method-name">testCase1</span>
-                <span class="method-start">7576 ms</span>
+                <span class="method-start">4028 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">testCase2</span>
-                <span class="method-start">7626 ms</span>
+                <span class="method-start">4074 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase3</span>
+                <span class="method-start">4095 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase4</span>
+                <span class="method-start">7034 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

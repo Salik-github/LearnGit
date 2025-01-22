@@ -2,12 +2,7 @@
 <suite name="MyTestSuite"  parallel="methods" thread-count="4"> <!-- parallel="methods"-->
     <test name="Test1">
         <classes>
-            <class name="com.automationtesingwebsite.testsuite.homeTest">
-                <methods>
-                  <include name="testCase1" />
-                     <include name="testCase2" />
-                </methods>
-            </class>
+            <class name="com.automationtesingwebsite.testsuite.homeTest"/>
         </classes>
     </test>
 </suite>

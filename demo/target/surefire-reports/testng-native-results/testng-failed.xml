@@ -5,8 +5,10 @@
     <classes>
       <class name="com.automationtesingwebsite.testsuite.homeTest">
         <methods>
-          <include name="setUp"/>
-          <include name="testCase1"/>
+          <include name="testCase3"/>
+          <include name="testCase4"/>
+          <include name="setup"/>
+          <include name="testCase2"/>
         </methods>
       </class> <!-- com.automationtesingwebsite.testsuite.homeTest -->
     </classes>

@@ -1,21 +1,27 @@
 package com.automationtesingwebsite.testsuite;
 
 import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 public class WebdriverManage {
-    private  static ThreadLocal< WebDriver> driver = new ThreadLocal<>();
+    private static final ThreadLocal<WebDriver> driverThread = new ThreadLocal<>();
 
-    public static WebDriver getDriver()
-    {
-        return driver.get();
+    public static WebDriver getDriver() {
+        if (driverThread.get() == null) {
+            WebDriverManager.chromedriver().setup();
+            WebDriver driver = new ChromeDriver();
+            driver.manage().window().maximize();
+            driverThread.set(driver);
+        }
+        return driverThread.get();
     }
-    public static void setDriver(WebDriver webDriver)
-    {
-        driver.set(webDriver);
-    }
-    public static void quitDriver()
-    {
-        getDriver().quit();
-        driver.remove();
+
+    public static void quitDriver() {
+        if (driverThread.get() != null) {
+            driverThread.get().quit();
+            driverThread.remove();
+        }
     }
 }
